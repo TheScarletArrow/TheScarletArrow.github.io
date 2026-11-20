@@ -344,3 +344,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .case-panel:focus-
 @media(max-width:360px) {
   .section-header h2, .stack-layout h2 { font-size: 36px; }
 }
+
+@media (min-width: 1001px) {
+    .impact-grid {
+        grid-template-rows: repeat(2, minmax(270px, auto));
+    }
+}
