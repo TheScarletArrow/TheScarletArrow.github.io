@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#111820">
+  <meta name="theme-color" content="#0c0d0f">
   <meta name="color-scheme" content="dark">
   <title>Антон Юрков — Java Backend Engineer | Billing, Payments, Enterprise</title>
   <meta name="description" content="Антон Юрков — Java Backend Engineer. Проектирование billing-систем, платёжные интеграции, модернизация Java-микросервисов, PostgreSQL и надёжность банковского backend.">
@@ -82,7 +82,7 @@
       <div class="container">
         <div class="section-header"><div><div class="section-label"><span>01 — IMPACT</span> Подтверждённые результаты</div><h2 id="impactTitle">За инженерной работой<br>стоят <em>цифры.</em></h2></div><p>Не абстрактные обещания про «высокую нагрузку», а конкретные изменения в системах, над которыми работал.</p></div>
         <div class="impact-grid">
-          <article class="impact-card impact-featured"><div class="impact-heading"><span>АВТОМАТИЗАЦИЯ / BILLING</span><span>01</span></div><div class="impact-big transform"><span>3 дня</span><span class="transform-arrow">→</span><strong>&lt;1 мин</strong></div><p>Вместо ручного создания пользовательских лицензий специалистом БД — автоматизированная операция.</p><div class="impact-source">Платформа ОФД</div></article>
+          <article class="impact-card impact-featured"><div class="impact-heading"><span>АВТОМАТИЗАЦИЯ / BILLING</span><span>01</span></div><div class="impact-big transform"><span>3 дня</span><span class="transform-arrow">→</span><strong>&lt;1 мин</strong></div><p>Результат billing-проекта, над которым работал: автоматизация создания пользовательских лицензий.</p><div class="impact-source">Платформа ОФД</div></article>
           <article class="impact-card"><div class="impact-heading"><span>ТЕХНОЛОГИЧЕСКАЯ МИГРАЦИЯ</span><span>02</span></div><div class="impact-big">10 <small>сервисов</small></div><p>Переход на Java 25 и Spring Boot 4, включая адаптацию приложений к виртуальным потокам.</p><div class="impact-source">Платформа ОФД</div></article>
           <article class="impact-card"><div class="impact-heading"><span>ПРОИЗВОДИТЕЛЬНОСТЬ</span><span>03</span></div><div class="impact-big">15–20<small>%</small></div><p>Снижение времени выполнения операций за счёт оптимизации SQL и бизнес-логики.</p><div class="impact-source">Сбер</div></article>
           <article class="impact-card"><div class="impact-heading"><span>КАЧЕСТВО LEGACY-КОДА</span><span>04</span></div><div class="impact-big">80<small>%</small></div><p>Покрытие legacy-проекта unit-тестами после развития практики тестирования в команде.</p><div class="impact-source">Сбер</div></article>
@@ -95,18 +95,18 @@
         <div class="section-header"><div><div class="section-label"><span>02 — CASE STUDIES</span> Задача → работа → результат</div><h2 id="casesTitle">Инженерия<br><em>в деталях.</em></h2></div><p>Кейсы раскрывают не только конечные цифры, но и мою роль в проектировании, реализации и развитии систем.</p></div>
         <div class="cases-layout">
           <div class="case-tabs" role="tablist" aria-label="Выбрать инженерный кейс">
-            <button id="tab-billing" class="case-tab is-active" type="button" role="tab" aria-controls="panel-billing" aria-selected="true" data-target="billing"><span class="tab-index">01</span><span class="tab-copy"><strong>Архитектура billing</strong><small>Микросервисы · PL/SQL → Java</small></span><span aria-hidden="true">↗</span></button>
+            <button id="tab-billing" class="case-tab is-active" type="button" role="tab" aria-controls="panel-billing" aria-selected="true" data-target="billing"><span class="tab-index">01</span><span class="tab-copy"><strong>Разработка billing-системы</strong><small>Лицензии · Микросервисы · PL/SQL → Java</small></span><span aria-hidden="true">↗</span></button>
             <button id="tab-payments" class="case-tab" type="button" role="tab" aria-controls="panel-payments" aria-selected="false" tabindex="-1" data-target="payments"><span class="tab-index">02</span><span class="tab-copy"><strong>Платёжные интеграции</strong><small>От проектирования до production</small></span><span aria-hidden="true">↗</span></button>
             <button id="tab-bank" class="case-tab" type="button" role="tab" aria-controls="panel-bank" aria-selected="false" tabindex="-1" data-target="bank"><span class="tab-index">03</span><span class="tab-copy"><strong>Банковская система</strong><small>Данные · SLA · legacy</small></span><span aria-hidden="true">↗</span></button>
-            <button id="tab-licenses" class="case-tab" type="button" role="tab" aria-controls="panel-licenses" aria-selected="false" tabindex="-1" data-target="licenses"><span class="tab-index">04</span><span class="tab-copy"><strong>Автоматизация лицензий</strong><small>Ручной процесс → автоматический</small></span><span aria-hidden="true">↗</span></button>
-            <button id="tab-workflow" class="case-tab" type="button" role="tab" aria-controls="panel-workflow" aria-selected="false" tabindex="-1" data-target="workflow"><span class="tab-index">05</span><span class="tab-copy"><strong>Engineering workflow</strong><small>OpenSpec · CI · AI-assisted</small></span><span aria-hidden="true">↗</span></button>
+
+            <button id="tab-workflow" class="case-tab" type="button" role="tab" aria-controls="panel-workflow" aria-selected="false" tabindex="-1" data-target="workflow"><span class="tab-index">04</span><span class="tab-copy"><strong>Engineering workflow</strong><small>OpenSpec · CI · AI-assisted</small></span><span aria-hidden="true">↗</span></button>
           </div>
           <div class="case-panels">
             <article id="panel-billing" class="case-panel is-active" role="tabpanel" aria-labelledby="tab-billing" tabindex="0" data-panel="billing">
               <div class="case-meta"><span>ПЛАТФОРМА ОФД / 2026</span><span>BILLING · ARCHITECTURE</span></div>
-              <h3>От бизнес-доменов<br>к рабочим сервисам</h3>
-              <p class="case-lead">Участие в проектировании новой billing-системы и перенос логики из Oracle PL/SQL в микросервисный Java backend.</p>
-              <div class="case-stages"><div><span>01 / КОНТЕКСТ</span><p>Создание новой billing-системы при наличии сложившейся логики в legacy-решении.</p></div><div><span>02 / МОЯ РАБОТА</span><p>Совместно с техническим лидом прорабатывал границы бизнес-доменов, структуру БД, взаимодействие сервисов и интеграции. Самостоятельно разрабатывал микросервисы и выпускал их в production.</p></div><div><span>03 / РЕЗУЛЬТАТ</span><p>Перенос бизнес-логики в Java-сервисы; модернизация 10 микросервисов до Java 25 / Spring Boot 4 с адаптацией к виртуальным потокам.</p></div></div>
+              <h3>Разработка<br>billing-системы</h3>
+              <p class="case-lead">Работал над billing-системой в Платформе ОФД. Цель проекта — автоматизировать создание пользовательских лицензий.</p>
+              <div class="case-stages"><div><span>01 / КОНТЕКСТ</span><p>Пользовательские лицензии создавались специалистом БД вручную; процесс занимал до трёх рабочих дней. Billing-проект был направлен на автоматизацию этого процесса.</p></div><div><span>02 / МОЯ РАБОТА</span><p>Совместно с техническим лидом прорабатывал границы бизнес-доменов, структуру БД, взаимодействие сервисов и интеграции. Разрабатывал микросервисы, переносил логику из Oracle PL/SQL в Java и выпускал сервисы в production.</p></div><div><span>03 / РЕЗУЛЬТАТ ПРОЕКТА</span><p>Создание пользовательских лицензий автоматизировано: время выполнения сократилось с трёх рабочих дней до менее одной минуты.</p></div></div>
               <div class="case-tags"><span>Java 25</span><span>Spring Boot 4</span><span>Oracle PL/SQL</span><span>Microservices</span></div>
             </article>
             <article id="panel-payments" class="case-panel" role="tabpanel" aria-labelledby="tab-payments" tabindex="0" data-panel="payments">
@@ -122,13 +122,6 @@
               <p class="case-lead">Работа над business-critical банковской системой управления денежной наличностью.</p>
               <div class="case-stages"><div><span>01 / КОНТЕКСТ</span><p>Сложный legacy-код, нагрузка на БД и требования к производительности и SLA.</p></div><div><span>02 / МОЯ РАБОТА</span><p>Участвовал в миграции Oracle → PostgreSQL, оптимизировал SQL и бизнес-логику, добавлял Ehcache, рефакторил код и развивал тестирование.</p></div><div><span>03 / РЕЗУЛЬТАТ</span><p>Операции стали выполняться на 15–20% быстрее. Кэширование помогло восстановить SLA, покрытие unit-тестами выросло до 80%.</p></div></div>
               <div class="case-tags"><span>PostgreSQL</span><span>Oracle</span><span>Ehcache</span><span>JUnit / Mockito</span></div>
-            </article>
-            <article id="panel-licenses" class="case-panel" role="tabpanel" aria-labelledby="tab-licenses" tabindex="0" data-panel="licenses">
-              <div class="case-meta"><span>ПЛАТФОРМА ОФД / 2026</span><span>AUTOMATION · BILLING</span></div>
-              <h3>Убрать человека<br>из рутинного шага</h3>
-              <p class="case-lead">Автоматизация создания пользовательских лицензий, ранее выполнявшегося специалистом БД вручную.</p>
-              <div class="case-stages"><div><span>01 / КОНТЕКСТ</span><p>Ручная операция Database Developer занимала до трёх рабочих дней.</p></div><div><span>02 / МОЯ РАБОТА</span><p>Разработал автоматизацию процесса создания пользовательских лицензий.</p></div><div><span>03 / РЕЗУЛЬТАТ</span><p>Время выполнения операции сократилось с трёх рабочих дней до менее одной минуты.</p></div></div>
-              <div class="case-tags"><span>Billing</span><span>Automation</span><span>Business process</span></div>
             </article>
             <article id="panel-workflow" class="case-panel" role="tabpanel" aria-labelledby="tab-workflow" tabindex="0" data-panel="workflow">
               <div class="case-meta"><span>ПЛАТФОРМА ОФД / 2026</span><span>ENGINEERING PRACTICES</span></div>
@@ -160,7 +153,7 @@
       <div class="container">
         <div class="section-header"><div><div class="section-label"><span>04 — EXPERIENCE</span> Коммерческий опыт</div><h2 id="experienceTitle">От инфраструктуры<br>к <em>архитектуре систем.</em></h2></div><p>Последовательно работал с Java backend в инфраструктурных, продуктовых и банковских задачах.</p></div>
         <div class="experience-list">
-          <article class="experience-item"><div class="experience-time">МАЙ 2026 — СЕЙЧАС</div><div class="experience-details"><div class="experience-title"><h3>Платформа ОФД</h3><span>Java-разработчик</span></div><p>Billing-система с нуля, микросервисы, платежи, перенос legacy-логики, надёжные внешние интеграции и инженерные практики.</p><div class="tech-tags"><span>Java 17 / 25</span><span>Spring Boot 3 / 4</span><span>PostgreSQL</span><span>Kafka</span><span>Resilience4j</span></div></div></article>
+          <article class="experience-item"><div class="experience-time">МАЙ 2026 — СЕЙЧАС</div><div class="experience-details"><div class="experience-title"><h3>Платформа ОФД</h3><span>Java-разработчик</span></div><p>Участие в разработке billing-системы для автоматизации создания пользовательских лицензий: микросервисы, платежи, перенос legacy-логики, надёжные внешние интеграции и инженерные практики.</p><div class="tech-tags"><span>Java 17 / 25</span><span>Spring Boot 3 / 4</span><span>PostgreSQL</span><span>Kafka</span><span>Resilience4j</span></div></div></article>
           <article class="experience-item"><div class="experience-time">МАРТ 2024 — МАЙ 2026</div><div class="experience-details"><div class="experience-title"><h3>Сбер</h3><span>Java-разработчик</span></div><p>Business-critical банковская система управления денежной наличностью: Oracle → PostgreSQL, SQL-оптимизация, кэширование, SLA и тестирование legacy.</p><div class="tech-tags"><span>Java 17</span><span>Spring Framework</span><span>PostgreSQL</span><span>Ehcache</span><span>JUnit</span></div></div></article>
           <article class="experience-item"><div class="experience-time">ЯНВ 2023 — МАРТ 2024</div><div class="experience-details"><div class="experience-title"><h3>Инфолоджистикс</h3><span>Инженер-программист</span></div><p>Java/Kotlin-микросервисы для документооборота и складских процессов; аудит действий пользователей на Kafka и ClickHouse.</p><div class="tech-tags"><span>Java / Kotlin</span><span>Spring Boot</span><span>Kafka</span><span>ClickHouse</span></div></div></article>
         </div>
