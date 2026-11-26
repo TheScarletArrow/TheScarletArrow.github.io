@@ -25,36 +25,6 @@
   });
   window.addEventListener('resize', () => { if (window.innerWidth > 780) closeMenu(); });
 
-  const tabs = [...document.querySelectorAll('.case-tab')];
-  const panels = [...document.querySelectorAll('.case-panel')];
-  const activate = (tab, focus = false) => {
-    const key = tab.dataset.target;
-    tabs.forEach(t => {
-      const active = t === tab;
-      t.classList.toggle('is-active', active);
-      t.setAttribute('aria-selected', String(active));
-      t.tabIndex = active ? 0 : -1;
-    });
-    panels.forEach(panel => {
-      const active = panel.dataset.panel === key;
-      panel.classList.toggle('is-active', active);
-      panel.hidden = !active;
-    });
-    if (focus) tab.focus();
-  };
-  tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => activate(tab));
-    tab.addEventListener('keydown', event => {
-      let target = null;
-      if (['ArrowRight', 'ArrowDown'].includes(event.key)) target = tabs[(index + 1) % tabs.length];
-      if (['ArrowLeft', 'ArrowUp'].includes(event.key)) target = tabs[(index - 1 + tabs.length) % tabs.length];
-      if (event.key === 'Home') target = tabs[0];
-      if (event.key === 'End') target = tabs[tabs.length - 1];
-      if (target) { event.preventDefault(); activate(target, true); }
-    });
-  });
-  panels.forEach(p => { if (!p.classList.contains('is-active')) p.hidden = true; });
-
   const toast = document.getElementById('toast');
   let timeout;
   document.getElementById('copyEmail').addEventListener('click', async () => {

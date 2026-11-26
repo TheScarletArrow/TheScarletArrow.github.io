@@ -31,146 +31,241 @@
   <a class="skip-link" href="#main">К содержимому</a>
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Антон Юрков — начало страницы">
-        <span class="brand-mark" aria-hidden="true">AY<span>/</span></span>
-        <span class="brand-name"><strong>Антон Юрков</strong><small>Java Backend Engineer</small></span>
-      </a>
-      <nav class="desktop-nav" aria-label="Основное меню">
-        <a href="#expertise">Экспертиза</a>
-        <a href="#cases">Кейсы</a>
-        <a href="#experience">Опыт</a>
-        <a href="#method">Подход</a>
-      </nav>
-      <a class="header-cta" href="https://t.me/AntonYurkov" target="_blank" rel="noopener noreferrer">Связаться <span aria-hidden="true">↗</span></a>
+      <a class="brand" href="#about" aria-label="Антон Юрков — начало страницы"><span class="brand-mark" aria-hidden="true">AY<span>/</span></span><span class="brand-name"><strong>Антон Юрков</strong><small>Java Backend Engineer</small></span></a>
+      <nav class="desktop-nav" aria-label="Основное меню"><a href="#about">Обо мне</a><a href="#experience">Опыт</a><a href="#skills">Навыки</a></nav>
+      <a class="header-cta" href="https://t.me/AntonYurkov" target="_blank" rel="noopener noreferrer">Связаться</a>
       <button id="menuButton" class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Открыть меню"><span></span><span></span></button>
     </div>
-    <nav id="mobileNav" class="mobile-nav" aria-label="Мобильное меню" inert>
-      <a href="#expertise">Экспертиза</a><a href="#cases">Кейсы</a><a href="#experience">Опыт</a><a href="#method">Подход</a><a href="#contact">Контакты</a>
-    </nav>
+    <nav id="mobileNav" class="mobile-nav" aria-label="Мобильное меню" inert><a href="#about">Обо мне</a><a href="#experience">Опыт</a><a href="#skills">Навыки</a></nav>
   </header>
-
   <main id="main">
-    <section class="hero container" aria-labelledby="heroTitle">
+    <section id="about" class="hero container" aria-labelledby="aboutTitle">
       <div class="hero-main">
-        <div class="eyebrow"><span class="eyebrow-line"></span> JAVA BACKEND ENGINEER <span class="eyebrow-muted">/ ENTERPRISE SYSTEMS</span></div>
-        <h1 id="heroTitle">Сложные системы.<br><span>Ответственные</span><br>решения<span class="heading-stop">.</span></h1>
-        <p class="hero-lead">Проектирую и развиваю Java backend: billing-системы, платёжные интеграции и банковский enterprise. Работаю с архитектурой, legacy и надёжностью — от разбора требований до запуска в production. Использую LLM в разработке: Claude и Codex.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#cases">Посмотреть инженерные кейсы <span aria-hidden="true">↗</span></a>
-          <a class="button button-quiet" href="https://t.me/AntonYurkov" target="_blank" rel="noopener noreferrer">Написать в Telegram <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="hero-meta"><span><b>5 лет</b> коммерческого опыта</span><span><b>Москва</b> / удалённо или гибрид</span></div>
+        <div class="section-label">Обо мне</div>
+        <h1 id="aboutTitle">Антон<br><span>Юрков.</span></h1>
+        <p class="hero-role">Java Backend Engineer</p>
+        <p class="hero-lead">Проектирую и развиваю Java backend: billing-системы, платёжные интеграции и банковский enterprise. Работаю с архитектурой, legacy и надёжностью — от разбора требований до production.</p>
+        <p class="hero-lead">Использую LLM-агентов Claude и Codex для аналитики, проектирования, разработки и code review. Создаю Skills и MCP-инструменты для инженерных задач.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#experience">Посмотреть опыт</a><a class="button button-quiet" href="https://t.me/AntonYurkov" target="_blank" rel="noopener noreferrer">Написать в Telegram</a></div>
       </div>
-      <aside class="hero-dossier" aria-label="Инженерный профиль">
-        <div class="dossier-head"><span class="small-mono">ENGINEERING PROFILE</span><span class="dossier-index">001 / 2026</span></div>
-        <div class="dossier-title"><span class="section-overline">AREAS OF RESPONSIBILITY</span><h2>От устройства системы<br>до её эксплуатации.</h2></div>
-        <div class="dossier-rows">
-          <div class="dossier-row"><span>01</span><div><strong>Архитектура billing</strong><small>Границы доменов · модели данных · взаимодействие сервисов</small></div><span class="dossier-arrow" aria-hidden="true">↗</span></div>
-          <div class="dossier-row"><span>02</span><div><strong>Внешние интеграции</strong><small>Платежи · Spring Cloud · Resilience4j</small></div><span class="dossier-arrow" aria-hidden="true">↗</span></div>
-          <div class="dossier-row"><span>03</span><div><strong>Legacy &amp; data</strong><small>Oracle PL/SQL → Java · Oracle → PostgreSQL</small></div><span class="dossier-arrow" aria-hidden="true">↗</span></div>
-          <div class="dossier-row"><span>04</span><div><strong>Production delivery</strong><small>Тестирование · CI · code review · выпуск сервисов</small></div><span class="dossier-arrow" aria-hidden="true">↗</span></div>
-        </div>
-        <div class="dossier-bottom"><span>DESIGN</span><i></i><span>IMPLEMENT</span><i></i><span>VERIFY</span><i></i><span>SHIP</span></div>
+      <aside class="about-profile" aria-label="Краткий профиль">
+        <div class="profile-intro"><strong>5 лет</strong><span>коммерческой разработки</span></div>
+        <dl class="profile-facts">
+          <div><dt>Специализация</dt><dd>Java backend · микросервисы<br>Billing · платежи · enterprise</dd></div>
+          <div><dt>Подход</dt><dd>Понятные границы сервисов, проверяемые изменения и ответственность за production.</dd></div>
+          <div><dt>Образование</dt><dd>МАИ · магистратура, 2023</dd></div>
+          <div><dt>Английский</dt><dd>B2</dd></div>
+          <div><dt>Формат работы</dt><dd>Москва · удалённо / гибрид</dd></div>
+        </dl>
       </aside>
     </section>
-
-    <div class="competence-bar" aria-label="Основной стек">
-      <div class="container competence-inner"><span>JAVA 17 / 25</span><span>SPRING BOOT 3 / 4</span><span>POSTGRESQL</span><span>APACHE KAFKA</span><span>MICROSERVICES</span><span>TESTCONTAINERS</span></div>
-    </div>
-
-    <section id="expertise" class="section impact-section" aria-labelledby="impactTitle">
-      <div class="container">
-        <div class="section-header"><div><div class="section-label"><span>01 — IMPACT</span> Подтверждённые результаты</div><h2 id="impactTitle">За инженерной работой<br>стоят <em>цифры.</em></h2></div><p>Не абстрактные обещания про «высокую нагрузку», а конкретные изменения в системах, над которыми работал.</p></div>
-        <div class="impact-grid">
-          <article class="impact-card impact-featured"><div class="impact-heading"><span>АВТОМАТИЗАЦИЯ / BILLING</span><span>01</span></div><div class="impact-big transform"><span>3 дня</span><span class="transform-arrow">→</span><strong>&lt;1 мин</strong></div><p>Результат billing-проекта, над которым работал: автоматизация создания пользовательских лицензий.</p><div class="impact-source">Платформа ОФД</div></article>
-          <article class="impact-card"><div class="impact-heading"><span>ТЕХНОЛОГИЧЕСКАЯ МИГРАЦИЯ</span><span>02</span></div><div class="impact-big">10 <small>сервисов</small></div><p>Переход на Java 25 и Spring Boot 4, включая адаптацию приложений к виртуальным потокам.</p><div class="impact-source">Платформа ОФД</div></article>
-          <article class="impact-card"><div class="impact-heading"><span>ПРОИЗВОДИТЕЛЬНОСТЬ</span><span>03</span></div><div class="impact-big">15–20<small>%</small></div><p>Снижение времени выполнения операций за счёт оптимизации SQL и бизнес-логики.</p><div class="impact-source">Сбер</div></article>
-          <article class="impact-card"><div class="impact-heading"><span>КАЧЕСТВО LEGACY-КОДА</span><span>04</span></div><div class="impact-big">80<small>%</small></div><p>Покрытие legacy-проекта unit-тестами после развития практики тестирования в команде.</p><div class="impact-source">Сбер</div></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="cases" class="section cases-section" aria-labelledby="casesTitle">
-      <div class="container">
-        <div class="section-header"><div><div class="section-label"><span>02 — CASE STUDIES</span> Задача → работа → результат</div><h2 id="casesTitle">Инженерия<br><em>в деталях.</em></h2></div><p>Кейсы раскрывают не только конечные цифры, но и мою роль в проектировании, реализации и развитии систем.</p></div>
-        <div class="cases-layout">
-          <div class="case-tabs" role="tablist" aria-label="Выбрать инженерный кейс">
-            <button id="tab-billing" class="case-tab is-active" type="button" role="tab" aria-controls="panel-billing" aria-selected="true" data-target="billing"><span class="tab-index">01</span><span class="tab-copy"><strong>Разработка billing-системы</strong><small>Лицензии · Микросервисы · PL/SQL → Java</small></span><span aria-hidden="true">↗</span></button>
-            <button id="tab-payments" class="case-tab" type="button" role="tab" aria-controls="panel-payments" aria-selected="false" tabindex="-1" data-target="payments"><span class="tab-index">02</span><span class="tab-copy"><strong>Платёжные интеграции</strong><small>От проектирования до production</small></span><span aria-hidden="true">↗</span></button>
-            <button id="tab-bank" class="case-tab" type="button" role="tab" aria-controls="panel-bank" aria-selected="false" tabindex="-1" data-target="bank"><span class="tab-index">03</span><span class="tab-copy"><strong>Банковская система</strong><small>Данные · SLA · legacy</small></span><span aria-hidden="true">↗</span></button>
-
-            <button id="tab-workflow" class="case-tab" type="button" role="tab" aria-controls="panel-workflow" aria-selected="false" tabindex="-1" data-target="workflow"><span class="tab-index">04</span><span class="tab-copy"><strong>Engineering workflow</strong><small>OpenSpec · CI · LLM</small></span><span aria-hidden="true">↗</span></button>
-          </div>
-          <div class="case-panels">
-            <article id="panel-billing" class="case-panel is-active" role="tabpanel" aria-labelledby="tab-billing" tabindex="0" data-panel="billing">
-              <div class="case-meta"><span>ПЛАТФОРМА ОФД / 2026</span><span>BILLING · ARCHITECTURE</span></div>
-              <h3>Разработка<br>billing-системы</h3>
-              <p class="case-lead">Работал над billing-системой в Платформе ОФД. Цель проекта — автоматизировать создание пользовательских лицензий.</p>
-              <div class="case-stages"><div><span>01 / КОНТЕКСТ</span><p>Пользовательские лицензии создавались специалистом БД вручную; процесс занимал до трёх рабочих дней. Billing-проект был направлен на автоматизацию этого процесса.</p></div><div><span>02 / МОЯ РАБОТА</span><p>Совместно с техническим лидом прорабатывал границы бизнес-доменов, структуру БД, взаимодействие сервисов и интеграции. Разрабатывал микросервисы, переносил логику из Oracle PL/SQL в Java и выпускал сервисы в production.</p></div><div><span>03 / РЕЗУЛЬТАТ ПРОЕКТА</span><p>Создание пользовательских лицензий автоматизировано: время выполнения сократилось с трёх рабочих дней до менее одной минуты.</p></div></div>
-              <div class="case-tags"><span>Java 25</span><span>Spring Boot 4</span><span>Oracle PL/SQL</span><span>Microservices</span></div>
-            </article>
-            <article id="panel-payments" class="case-panel" role="tabpanel" aria-labelledby="tab-payments" tabindex="0" data-panel="payments">
-              <div class="case-meta"><span>ПЛАТФОРМА ОФД / 2026</span><span>PAYMENTS · INTEGRATIONS</span></div>
-              <h3>Платёжные сервисы<br>с полным циклом поставки</h3>
-              <p class="case-lead">Самостоятельная реализация интеграций с платёжными провайдерами и вывод в production.</p>
-              <div class="case-stages"><div><span>01 / КОНТЕКСТ</span><p>Необходимость подключить внешние платёжные сценарии для физических и юридических лиц.</p></div><div><span>02 / МОЯ РАБОТА</span><p>Спроектировал, реализовал и выпустил сервис интеграции с «Моментальными платежами» Сбера. Отдельно реализовал интеграцию с ЮKassa.</p></div><div><span>03 / РЕЗУЛЬТАТ</span><p>Каждая интеграция выполнена за две недели. За период эксплуатации сервиса Сбера не зарегистрировано обращений в поддержку, связанных с его работой.</p></div></div>
-              <div class="case-tags"><span>Java</span><span>Spring</span><span>External API</span><span>Production</span></div>
-            </article>
-            <article id="panel-bank" class="case-panel" role="tabpanel" aria-labelledby="tab-bank" tabindex="0" data-panel="bank">
-              <div class="case-meta"><span>СБЕР / 2024–2026</span><span>ENTERPRISE · RELIABILITY</span></div>
-              <h3>Развивать legacy,<br>не теряя стабильность</h3>
-              <p class="case-lead">Работа над business-critical банковской системой управления денежной наличностью.</p>
-              <div class="case-stages"><div><span>01 / КОНТЕКСТ</span><p>Сложный legacy-код, нагрузка на БД и требования к производительности и SLA.</p></div><div><span>02 / МОЯ РАБОТА</span><p>Участвовал в миграции Oracle → PostgreSQL, оптимизировал SQL и бизнес-логику, добавлял Ehcache, рефакторил код и развивал тестирование.</p></div><div><span>03 / РЕЗУЛЬТАТ</span><p>Операции стали выполняться на 15–20% быстрее. Кэширование помогло восстановить SLA, покрытие unit-тестами выросло до 80%.</p></div></div>
-              <div class="case-tags"><span>PostgreSQL</span><span>Oracle</span><span>Ehcache</span><span>JUnit / Mockito</span></div>
-            </article>
-            <article id="panel-workflow" class="case-panel" role="tabpanel" aria-labelledby="tab-workflow" tabindex="0" data-panel="workflow">
-              <div class="case-meta"><span>ПЛАТФОРМА ОФД / 2026</span><span>ENGINEERING PRACTICES</span></div>
-              <h3>Качество разработки —<br>часть процесса</h3>
-              <p class="case-lead">Развитие инженерных практик, чтобы требования, код и проверки оставались согласованными.</p>
-              <div class="case-stages"><div><span>01 / КОНТЕКСТ</span><p>Разработка новых сервисов требует технического согласования требований и воспроизводимых проверок.</p></div><div><span>02 / МОЯ РАБОТА</span><p>Внедрял Spec-Driven Development на OpenSpec, CI-проверки спецификаций и интеграционные тесты на Testcontainers. Использую LLM в разработке: работаю с Claude и Codex, создаю Skills и MCP-инструменты для интеграции с Jira, Confluence и Graylog.</p></div><div><span>03 / РЕЗУЛЬТАТ</span><p>В инженерный процесс добавлены ревью спецификаций до реализации, их автоматическая валидация и запуск интеграционных тестов в CI.</p></div></div>
-              <div class="case-tags"><span>OpenSpec</span><span>Testcontainers</span><span>CI</span><span>MCP</span></div>
-            </article>
-          </div>
-        </div>
-        <p class="case-disclaimer">Сведения основаны на резюме. Внутренние схемы, конфигурации и другие непубличные детали систем не раскрываются.</p>
-      </div>
-    </section>
-
-    <section id="method" class="section method-section" aria-labelledby="methodTitle">
-      <div class="container">
-        <div class="section-header"><div><div class="section-label"><span>03 — ENGINEERING</span> За что отвечаю</div><h2 id="methodTitle">Не набор фреймворков.<br><em>Инженерный подход.</em></h2></div><p>Рассматриваю backend как систему контрактов, данных, отказов и изменений — а не только как код отдельных сервисов.</p></div>
-        <div class="method-grid">
-          <article class="method-card"><div class="method-top"><span>01 / ARCHITECTURE</span><span>↗</span></div><h3>Границы и контракты</h3><p>Декомпозиция бизнес-доменов, модели данных, межсервисное взаимодействие и внешние интеграции.</p><div class="method-evidence">Практика: проектирование billing совместно с техлидом</div></article>
-          <article class="method-card"><div class="method-top"><span>02 / RESILIENCE</span><span>↗</span></div><h3>Устойчивость к отказам</h3><p>Механизмы для внешних интеграций: Circuit Breaker, Rate Limiter и другие инструменты Resilience4j.</p><div class="method-evidence">Практика: Spring Cloud / Resilience4j</div></article>
-          <article class="method-card"><div class="method-top"><span>03 / MODERNIZATION</span><span>↗</span></div><h3>Эволюция без переписывания ради переписывания</h3><p>Работа с legacy, миграции Oracle PL/SQL → Java и Oracle → PostgreSQL, рефакторинг и оптимизация SQL.</p><div class="method-evidence">Практика: billing и банковский backend</div></article>
-          <article class="method-card"><div class="method-top"><span>04 / VERIFICATION</span><span>↗</span></div><h3>Изменения, которые можно проверить</h3><p>Тестирование реальных интеграций, Testcontainers, CI-проверки, code review и технические спецификации до реализации.</p><div class="method-evidence">Практика: OpenSpec / CI / JUnit / Testcontainers</div></article>
-        </div>
-        <div class="method-note"><span class="small-mono">ENGINEERING PRINCIPLE</span><p>Хорошее решение — то, для которого понятны границы ответственности, способ проверки и последствия отказа.</p></div>
-      </div>
-    </section>
-
     <section id="experience" class="section experience-section" aria-labelledby="experienceTitle">
       <div class="container">
-        <div class="section-header"><div><div class="section-label"><span>04 — EXPERIENCE</span> Коммерческий опыт</div><h2 id="experienceTitle">От инфраструктуры<br>к <em>архитектуре систем.</em></h2></div><p>Последовательно работал с Java backend в инфраструктурных, продуктовых и банковских задачах.</p></div>
+        <div class="section-header"><div><div class="section-label">Коммерческая разработка</div><h2 id="experienceTitle">Опыт</h2></div><p>Проекты, зона ответственности и результаты моей работы.</p></div>
         <div class="experience-list">
-          <article class="experience-item"><div class="experience-time">МАЙ 2026 — СЕЙЧАС</div><div class="experience-details"><div class="experience-title"><h3>Платформа ОФД</h3><span>Java-разработчик</span></div><p>Участие в разработке billing-системы для автоматизации создания пользовательских лицензий: микросервисы, платежи, перенос legacy-логики, надёжные внешние интеграции и инженерные практики.</p><div class="tech-tags"><span>Java 17 / 25</span><span>Spring Boot 3 / 4</span><span>PostgreSQL</span><span>Kafka</span><span>Resilience4j</span></div></div></article>
-          <article class="experience-item"><div class="experience-time">МАРТ 2024 — МАЙ 2026</div><div class="experience-details"><div class="experience-title"><h3>Сбер</h3><span>Java-разработчик</span></div><p>Business-critical банковская система управления денежной наличностью: Oracle → PostgreSQL, SQL-оптимизация, кэширование, SLA и тестирование legacy.</p><div class="tech-tags"><span>Java 17</span><span>Spring Framework</span><span>PostgreSQL</span><span>Ehcache</span><span>JUnit</span></div></div></article>
-          <article class="experience-item"><div class="experience-time">ЯНВ 2023 — МАРТ 2024</div><div class="experience-details"><div class="experience-title"><h3>Инфолоджистикс</h3><span>Инженер-программист</span></div><p>Java/Kotlin-микросервисы для документооборота и складских процессов; аудит действий пользователей на Kafka и ClickHouse.</p><div class="tech-tags"><span>Java / Kotlin</span><span>Spring Boot</span><span>Kafka</span><span>ClickHouse</span></div></div></article>
+          <article class="experience-item">
+            <div class="experience-time">МАЙ 2026 — СЕЙЧАС</div>
+            <div class="experience-details">
+              <div class="experience-title"><h3>Платформа ОФД</h3><span>Java-разработчик</span></div>
+              <p class="experience-context">Разработка billing-системы с нуля, платёжные сервисы и внешние интеграции. SLA — 99,9%.</p>
+              <div class="experience-columns">
+              <div class="experience-group duties">
+                <h4>Обязанности</h4>
+                <ul>
+                  <li>Совместно с техлидом проектировал архитектуру: границы микросервисов, структуру БД и взаимодействие компонентов.</li>
+                  <li>Разрабатывал микросервисы и обеспечивал полный цикл поставки до production. Реализовывал отказоустойчивость интеграций на Spring Cloud и Resilience4j.</li>
+                  <li>Применял LLM-агентов Claude и Codex для аналитики, проектирования, разработки и code review. Разрабатывал Skills и MCP-инструменты для Jira, Confluence и Graylog.</li>
+                  <li>Проводил code review и технические синхронизации для проработки решений и обмена знаниями.</li>
+                </ul>
+              </div>
+              <div class="experience-group achievements">
+                <h4>Достижения</h4>
+                <ul>
+                  <li>Перенёс бизнес-логику из Oracle PL/SQL в Java. Результат billing-проекта — время создания лицензий сократилось <strong>с трёх рабочих дней до менее минуты</strong>.</li>
+                  <li>Реализовал интеграции со <strong>Сбер Бизнес, ЮКасса и ФНС (ЕГРЮЛ и ЕГРИП)</strong>.</li>
+                  <li>Перевёл <strong>10 микросервисов на Java 25 и Spring Boot 4</strong>, адаптировал их к виртуальным потокам.</li>
+                  <li>Настроил сбор метрик сервисов и разработал <strong>дашборды Grafana</strong>.</li>
+                  <li>Внедрил OpenSpec и ревью спецификаций до реализации. Настроил их проверку и интеграционные тесты на <strong>Testcontainers через DinD</strong> в CI.</li>
+                </ul>
+              </div>
+              </div>
+              <details class="experience-cases">
+                <summary>Кейсы <span class="cases-count">3 интеграции</span></summary>
+                <div class="case-menu">
+                  <details class="integration-case">
+                    <summary>Интеграция с «Моментальными платежами» — Сбер Бизнес</summary>
+                    <div class="integration-content">
+                      <p>Самостоятельно спроектировал, разработал и вывел сервис интеграции в production.</p>
+                      <p><strong>Результат:</strong> запуск за две недели. За период эксплуатации не зарегистрировано обращений в поддержку, связанных с работой сервиса.</p>
+                    </div>
+                  </details>
+                  <details class="integration-case">
+                    <summary>Интеграция с ЮКасса</summary>
+                    <div class="integration-content">
+                      <p>Реализовал интеграцию для обработки платежей физических и юридических лиц.</p>
+                      <p><strong>Результат:</strong> интеграция выполнена за две недели.</p>
+                    </div>
+                  </details>
+                  <details class="integration-case">
+                    <summary>Интеграция с ФНС (ЕГРЮЛ и ЕГРИП)</summary>
+                    <div class="integration-content">
+                      <p>Реализовал интеграцию с ФНС для работы с ЕГРЮЛ и ЕГРИП.</p>
+                    </div>
+                  </details>
+                </div>
+              </details>
+              <div class="tech-tags"><span>Java 17 / 25</span><span>Spring Boot 3 / 4</span><span>PostgreSQL</span><span>Kafka</span><span>Resilience4j</span><span>Grafana</span><span>Testcontainers / DinD</span><span>OpenSpec</span><span>LLM / MCP</span></div>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div class="experience-time">МАРТ 2024 — МАЙ 2026</div>
+            <div class="experience-details">
+              <div class="experience-title"><h3>Сбер</h3><span>Java-разработчик</span></div>
+              <p class="experience-context">Банковская система управления денежной наличностью с требованиями к стабильности, отказоустойчивости и производительности.</p>
+              <div class="experience-columns">
+              <div class="experience-group duties">
+                <h4>Обязанности</h4>
+                <ul>
+                  <li>Разрабатывал и поддерживал backend на Java и Spring Framework, рефакторил legacy-код и проводил code review.</li>
+                  <li>Участвовал в миграции Oracle → PostgreSQL и адаптировал SQL-запросы.</li>
+                  <li>Дорабатывал frontend на JavaScript и TypeScript, развивал документацию в Confluence и консультировал команду по SQL и бизнес-логике.</li>
+                </ul>
+              </div>
+              <div class="experience-group achievements">
+                <h4>Достижения</h4>
+                <ul>
+                  <li>Оптимизировал SQL и бизнес-логику: операции стали выполняться <strong>на 15–20% быстрее</strong>, нагрузка на БД снизилась.</li>
+                  <li>Внедрил кэширование на Ehcache и помог восстановить SLA системы.</li>
+                  <li>Увеличил покрытие legacy-проекта тестами <strong>до 80%</strong> и внедрил обязательное unit-тестирование на JUnit и Jest.</li>
+                  <li>Разработал <strong>REST API для внутренних AI-агентов</strong>. Внедрял LLM в команде для написания тестов и рефакторинга legacy.</li>
+                </ul>
+              </div>
+              </div>
+              <div class="tech-tags"><span>Java 17</span><span>Spring Framework</span><span>PostgreSQL</span><span>Ehcache</span><span>JUnit / Mockito</span><span>Jenkins</span><span>LLM</span></div>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div class="experience-time">ЯНВ 2023 — МАРТ 2024</div>
+            <div class="experience-details">
+              <div class="experience-title"><h3>Инфолоджистикс</h3><span>Инженер-программист</span></div>
+              <p class="experience-context">Система электронного документооборота и система управления складом.</p>
+              <div class="experience-columns">
+              <div class="experience-group duties">
+                <h4>Обязанности</h4>
+                <ul>
+                  <li>Разрабатывал микросервисы на Java и Kotlin с использованием Spring Boot и PostgreSQL.</li>
+                  <li>Развивал legacy-компоненты на Spring MVC, JSP, jQuery и Backbone; добавлял функции и исправлял дефекты.</li>
+                  <li>Создавал документацию OpenAPI, покрывал сервисы тестами на JUnit и Mockito, использовал Docker для локальной разработки.</li>
+                </ul>
+              </div>
+              <div class="experience-group achievements">
+                <h4>Достижения</h4>
+                <ul>
+                  <li>Разработал <strong>систему аудита действий пользователей на Kafka и ClickHouse</strong> для аналитики и мониторинга.</li>
+                  <li>Участвовал в миграции сервисов на Spring Cloud.</li>
+                  <li>Оптимизировал SQL и бизнес-логику, выявляя узкие места по планам выполнения запросов.</li>
+                </ul>
+              </div>
+              </div>
+              <div class="tech-tags"><span>Java 11 / Kotlin</span><span>Spring Boot / Cloud</span><span>PostgreSQL</span><span>Kafka</span><span>ClickHouse</span><span>Docker</span></div>
+            </div>
+          </article>
+          <details class="earlier-experience">
+            <summary>Ранний опыт: НТ Разработки, ОТР 2000, SberTech</summary>
+            <div class="earlier-experience-content">
+          <article class="experience-item">
+            <div class="experience-time">АВГ 2022 — ДЕК 2022</div>
+            <div class="experience-details">
+              <div class="experience-title"><h3>НТ Разработки</h3><span>Java-разработчик</span></div>
+              <p class="experience-context">Backend-сервисы на Java и Kotlin.</p>
+              <div class="experience-columns">
+              <div class="experience-group duties">
+                <h4>Обязанности</h4>
+                <ul>
+                  <li>Разрабатывал и дорабатывал REST API, согласовывал контракты и форматы данных с frontend-разработчиками.</li>
+                  <li>Участвовал в проектировании структуры БД и оптимизации SQL.</li>
+                </ul>
+              </div>
+              <div class="experience-group achievements">
+                <h4>Достижения</h4>
+                <ul>
+                  <li>Покрыл сервисы unit-тестами на JUnit и Mockito.</li>
+                </ul>
+              </div>
+              </div>
+              <div class="tech-tags"><span>Java 11 / Kotlin</span><span>Spring Boot</span><span>PostgreSQL / Oracle</span><span>Liquibase</span></div>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div class="experience-time">МАРТ 2022 — МАЙ 2022</div>
+            <div class="experience-details">
+              <div class="experience-title"><h3>ОТР 2000</h3><span>Младший разработчик</span></div>
+              <p class="experience-context">Внутренняя HR-система компании.</p>
+              <div class="experience-columns">
+              <div class="experience-group duties">
+                <h4>Обязанности</h4>
+                <ul>
+                  <li>Разрабатывал backend-функциональность и исправлял дефекты.</li>
+                  <li>Работал с SQL-запросами и структурой данных PostgreSQL; использовал Docker и Docker Compose для локального запуска.</li>
+                </ul>
+              </div>
+              <div class="experience-group achievements">
+                <h4>Достижения</h4>
+                <ul>
+                  <li>Реализовал доработки backend-функциональности внутренней HR-системы.</li>
+                </ul>
+              </div>
+              </div>
+              <div class="tech-tags"><span>Kotlin</span><span>Spring Boot</span><span>PostgreSQL</span><span>Docker</span></div>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div class="experience-time">ОКТ 2021 — МАРТ 2022</div>
+            <div class="experience-details">
+              <div class="experience-title"><h3>SberTech</h3><span>Стажёр, младший инженер</span></div>
+              <p class="experience-context">Инструмент автоматизации распространения конфигураций в OpenShift-кластере.</p>
+              <div class="experience-columns">
+              <div class="experience-group duties">
+                <h4>Обязанности</h4>
+                <ul>
+                  <li>Участвовал в разработке MVP приложения и отладке развёртывания в OpenShift.</li>
+                </ul>
+              </div>
+              <div class="experience-group achievements">
+                <h4>Достижения</h4>
+                <ul>
+                  <li>Разработал <strong>алгоритм распространения конфигурационных файлов</strong> между компонентами системы.</li>
+                </ul>
+              </div>
+              </div>
+              <div class="tech-tags"><span>Java</span><span>OpenShift</span></div>
+            </div>
+          </article>
+            </div>
+          </details>
         </div>
-        <details class="earlier-experience"><summary>Ранний опыт: НТ Разработки, ОТР 2000, SberTech <span aria-hidden="true">+</span></summary><div class="early-grid"><div><b>НТ Разработки</b><small>Авг — дек 2022</small><p>REST API на Java/Kotlin, базы данных.</p></div><div><b>ОТР 2000</b><small>Мар — май 2022</small><p>Внутренняя HR-система, Kotlin и Spring Boot.</p></div><div><b>SberTech</b><small>Окт 2021 — мар 2022</small><p>Стажировка, инструмент конфигурации в OpenShift.</p></div></div></details>
-        <div class="experience-extra"><span>ОБРАЗОВАНИЕ <strong>МАИ · магистратура, 2023</strong></span><span>АНГЛИЙСКИЙ <strong>B2</strong></span></div>
       </div>
     </section>
-
-    <section class="section stack-section" id="stack" aria-labelledby="stackTitle">
-      <div class="container stack-layout"><div><div class="section-label"><span>05 — STACK</span> Технический инструментарй</div><h2 id="stackTitle">Технологии<br>под <em>задачу.</em></h2><p>Указываю инструменты, с которыми работал в коммерческих проектах.</p></div><div class="stack-grid"><div class="stack-group"><h3>Платформа</h3><p>Java 17/25 · Kotlin · Spring Boot 3/4 · Spring Framework · Spring Cloud</p></div><div class="stack-group"><h3>Данные и события</h3><p>PostgreSQL · Oracle · Kafka · Redis · ClickHouse · Ehcache</p></div><div class="stack-group"><h3>Надёжность и качество</h3><p>Resilience4j · Testcontainers · JUnit · Mockito · Docker · CI</p></div><div class="stack-group"><h3>LLM и инструменты разработки</h3><p>Claude · Codex · Skills · MCP · OpenSpec · OpenAPI · Code Review</p></div></div></div>
-    </section>
-
-    <section id="contact" class="contact-section" aria-labelledby="contactTitle">
-      <div class="container contact-inner"><div class="section-label"><span>06 — CONTACT</span> Связаться</div><h2 id="contactTitle">Обсудим сложную<br><em>backend-задачу.</em></h2><div class="contact-content"><p>Интересны задачи, где нужно разобраться в существующей системе, принять технические решения и отвечать за результат в production.</p><a class="contact-main-link" href="https://t.me/AntonYurkov" target="_blank" rel="noopener noreferrer">Написать в Telegram <span aria-hidden="true">↗</span></a></div><div class="contact-meta"><div><span>EMAIL</span><a href="mailto:anton20001701@yandex.ru">anton20001701@yandex.ru</a><button type="button" id="copyEmail" class="copy-email" aria-label="Скопировать email">Копировать</button></div><div><span>ПРОФИЛЬ</span><a href="https://setka.ru/users/2d37770a-e584-4ce3-adad-cde44b485cce" target="_blank" rel="noopener noreferrer">Сетка ↗</a></div><div><span>ФОРМАТ РАБОТЫ</span><strong>Удалённо / гибрид · Москва</strong></div></div></div>
+    <section id="skills" class="section skills-section" aria-labelledby="skillsTitle">
+      <div class="container">
+        <div class="section-header"><div><div class="section-label">Технический инструментарий</div><h2 id="skillsTitle">Навыки</h2></div><p>Технологии и практики, которые применял в проектах.</p></div>
+        <div class="skills-grid">
+          <div class="skill-group"><h3>Backend</h3><p>Java 11 / 17 / 25 · Kotlin · Spring Boot 3 / 4 · Spring Framework · Spring Cloud · REST API · OpenAPI</p></div>
+          <div class="skill-group"><h3>Данные и события</h3><p>PostgreSQL · Oracle · PL/SQL · Kafka · Redis · ClickHouse · Ehcache · Flyway · Liquibase</p></div>
+          <div class="skill-group"><h3>Тестирование и CI</h3><p>JUnit · Mockito · Testcontainers · Docker-in-Docker (DinD) · Jenkins · CI · Docker · OpenShift</p></div>
+          <div class="skill-group"><h3>Надёжность и мониторинг</h3><p>Resilience4j · Circuit Breaker · Rate Limiter · метрики сервисов · Grafana · Graylog · SLA</p></div>
+          <div class="skill-group"><h3>LLM и автоматизация</h3><p>Claude · Codex · Skills · MCP · интеграции с Jira, Confluence и Graylog · LLM-агенты в разработке</p></div>
+          <div class="skill-group"><h3>Инженерные практики</h3><p>Проектирование микросервисов · миграция legacy · оптимизация SQL · code review · Spec-Driven Development · OpenSpec</p></div>
+        </div>
+      </div>
     </section>
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><a class="footer-logo" href="#top" aria-label="К началу">AY/</a><span>© <span id="year">2026</span> Антон Юрков · Java Backend Engineer</span><a href="#top">Наверх ↑</a></div></footer>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-contact"><div><h2>Будем на связи</h2><p>Открыт к обсуждению backend-задач.</p></div><div class="contact-links"><a href="https://t.me/AntonYurkov" target="_blank" rel="noopener noreferrer">Telegram</a><a href="https://setka.ru/users/2d37770a-e584-4ce3-adad-cde44b485cce" target="_blank" rel="noopener noreferrer">Сетка</a><div class="email-contact"><a href="mailto:anton20001701@yandex.ru">anton20001701@yandex.ru</a><button type="button" id="copyEmail" class="copy-email" aria-label="Скопировать email">Копировать</button></div></div></div>
+      <div class="footer-bottom"><span>© <span id="year">2026</span> Антон Юрков · Java Backend Engineer</span><a href="#top">Наверх</a></div>
+    </div>
+  </footer>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script src="script.js" defer></script>
 </body>
